@@ -27,7 +27,7 @@ def index():
         purchases = float(purchases)
         suppcard = float(suppcard)
         print(purchases, suppcard)
-        model1 = joblib.load("CCU_DI")
+        model1 = joblib.load("CCU_DT")
         pred1 = model1.predict([[purchases, suppcard]])
         print(pred1)
         s1 = "The score of credit card upgrade based on decision tree is " + str(pred1)
